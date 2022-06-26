@@ -26,17 +26,17 @@ export default function Homepagemint() {return (
       <h1>
         2080 Uniquely generated cybercitizens living on the ergo blockchain
       </h1>
-      <a id="explore" href="./pages/explore-gen2.html">
+     <Link id="explore" to="/explore-gen2"> 
         EXPLORE
-      </a>
+   </Link>
       <div className="enter-estate-container-mobile">
-        <a
+        <Link to="cyberia-estates"
           className="pulseBox"
           id="enter-estate"
           href="../pages/cyberia-estates"
         >
-
-        </a>
+</Link>
+    
       </div>
     </div>
   </section>

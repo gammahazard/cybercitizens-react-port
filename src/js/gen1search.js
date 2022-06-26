@@ -1,4 +1,4 @@
-function searchgen1() {
+export function searchgen1() {
   // Declare variables
   let input, filter, ul, li, a, i, txtValue;
   input = document.getElementById("myInput");
@@ -18,6 +18,4 @@ function searchgen1() {
   }
 }
 
-document.getElementById('explorerToHome').onclick = (event) => {
-  window.location='../index.html';
-}
+
