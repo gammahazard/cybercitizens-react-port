@@ -44,8 +44,14 @@ display:block;
     max-width: 80vw;
     margin: 0 auto;
 max-height:80vw;
-background-size:cover;
-    border-radius: 12px;
+background-size:contain;
+
+}
+img#showgunslinger {
+  max-width: 80vw;
+  margin: 0 auto;
+max-height:80vw;
+background-size:contain;
 }
   li.aptresults {
     list-style-type:none;
