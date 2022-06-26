@@ -1,0 +1,208 @@
+$background-colour: #0B0029;
+$main-colour: #0B0029;
+$pink: #EE2DFF;
+$yellow: #F7FC19;
+$blue: #2f4aa3;
+$secondary-hover: #8c1d8c;
+$highlight-colour: #258ae8;
+$header-background-colour: #322554;
+$border-colour: #EE2DFF;
+
+// --yellow: #F7FC19;
+// --pink: #EE2DFF;
+// --blue: #0B0029;
+// --bg: var(--blue);
+
+// --red: #FF0000;
+// --purple: #811CB0;
+// --teal: #2fa388;
+// --blue-purple: #2f4aa3;
+@font-face {
+    font-family: pixelFont;
+    src: url("../assets/fonts/Mechfire_Bold.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-y: visible;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+#dino-game {
+    text-align: center;
+
+    width: 90% !important;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#loading-message {
+    color: white;
+    text-shadow: 2px 2px $main-colour;
+
+    font-size: clamp(2rem, 3rem + 2vw, 4rem);
+
+    max-width: 90%;
+    margin: 2em auto;
+}
+
+.main-header {
+    text-align: center;
+    margin: 1em auto;
+    margin-bottom: 0;
+
+    font-size: 6rem;
+    text-shadow: 2px 2px $blue;
+
+    max-width: 90% !important;
+}
+
+canvas {
+    display: block;
+    max-width: 800px !important;
+    margin: 0 auto;
+
+    border: 1px $main-colour solid;
+    border-radius: 12px;
+}
+
+#leaderboard-container {
+    display: none;
+}
+
+#leaderboard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $main-colour;
+    text-shadow: 2px 2px $highlight-colour;
+
+    min-width: 40% !important;
+
+    display: flex;
+    // display: none;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 1em;
+
+    border-radius: 28px;
+    background: $background-colour;
+
+    border: 2px solid $pink;
+
+    font-family: pixelFont;
+}
+
+#leaderboard-header {
+    font-size: clamp(3rem, 4rem, 6rem);
+}
+
+.leaderboard-button {
+    border: none;
+    border-radius: 18px;
+
+    background: $main-colour;
+    
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+
+    border: 2px solid $pink;
+
+    transition: 1s ease-out;
+
+    min-width: 50%;
+    padding: 1%;
+    margin: 2% auto;
+
+    color: $yellow;
+    text-shadow: 2px 2px $blue;
+
+    font-family: pixelFont;
+}
+
+
+.leaderboard-button:hover {
+    color: $pink;
+    text-shadow: 2px 2px $main-colour;
+}
+
+input[type="text"], textarea {
+    background-color: $background-colour;
+    color: $yellow;
+    text-shadow: 2px 2px $blue;
+
+    border-radius: 18px;
+
+    width: 50%;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+
+    transition: ease-in 1s;
+
+    margin: 2% auto;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="text"]:hover, textarea:hover {
+    border: 2px $pink solid;
+}
+
+.row {
+    font-size: clamp(2rem, 2.5rem, 3rem);;
+}
+
+#leaderboard-toggle {
+    border: none;
+    border-radius: 18px;
+    font-size: 1.125rem;
+
+
+    background: $main-colour;
+    
+    font-weight: 600;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+
+    border: 2px solid $border-colour;
+
+    color: $yellow;
+    text-shadow: 2px 2px $blue;
+
+    transition: 1s ease-out;
+
+    max-width: 50%;
+    padding: 1%;
+    margin: 2% auto;
+
+    font-family: pixelFont;
+}
+
+#leaderboard-toggle:hover {
+    color: $pink;
+}
+
+.footer-image {
+    width: 60%;
+    background: red;
+}
+
+button {
+    color: white;
+}
+
+.name {
+    color: $yellow;
+    text-shadow: 1px 1px $blue;
+}
