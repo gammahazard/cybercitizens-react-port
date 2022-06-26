@@ -34,21 +34,18 @@ html {
     border: 3px solid var(--scrollbarBG);
   }
   img#cyberia-map {
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:contain;
-    width:65rem;
-    height:65rem;
+
+display:block;
 }
   section.locations {
     background:black;
 }
   img.allaptimgs {
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:contain;
-    width:65rem;
-    height:65rem;
+    max-width: 80vw;
+    margin: 0 auto;
+max-height:80vw;
+background-size:cover;
+    border-radius: 12px;
 }
   li.aptresults {
     list-style-type:none;
